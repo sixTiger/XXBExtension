@@ -14,6 +14,7 @@
 		628CF65B1B71A44F005A8750 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 628CF65A1B71A44F005A8750 /* Images.xcassets */; };
 		628CF65E1B71A44F005A8750 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 628CF65C1B71A44F005A8750 /* LaunchScreen.xib */; };
 		628CF66A1B71A44F005A8750 /* XXBExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 628CF6691B71A44F005A8750 /* XXBExtensionTests.m */; };
+		628CF6771B71A76F005A8750 /* XXBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 628CF6761B71A76F005A8750 /* XXBUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		628CF6631B71A44F005A8750 /* XXBExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XXBExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		628CF6681B71A44F005A8750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		628CF6691B71A44F005A8750 /* XXBExtensionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXBExtensionTests.m; sourceTree = "<group>"; };
+		628CF6751B71A76F005A8750 /* XXBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBUser.h; sourceTree = "<group>"; };
+		628CF6761B71A76F005A8750 /* XXBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBUser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		628CF64C1B71A44F005A8750 /* XXBExtension */ = {
 			isa = PBXGroup;
 			children = (
+				628CF6731B71A725005A8750 /* Class */,
+				628CF6741B71A725005A8750 /* XXBExtension */,
 				628CF6511B71A44F005A8750 /* AppDelegate.h */,
 				628CF6521B71A44F005A8750 /* AppDelegate.m */,
 				628CF6541B71A44F005A8750 /* ViewController.h */,
@@ -117,6 +122,22 @@
 				628CF6681B71A44F005A8750 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		628CF6731B71A725005A8750 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				628CF6751B71A76F005A8750 /* XXBUser.h */,
+				628CF6761B71A76F005A8750 /* XXBUser.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		628CF6741B71A725005A8750 /* XXBExtension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = XXBExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				628CF6561B71A44F005A8750 /* ViewController.m in Sources */,
+				628CF6771B71A76F005A8750 /* XXBUser.m in Sources */,
 				628CF6531B71A44F005A8750 /* AppDelegate.m in Sources */,
 				628CF6501B71A44F005A8750 /* main.m in Sources */,
 			);
