@@ -1,9 +1,9 @@
 //
 //  ViewController.m
-//  XXBExtension
+//  XXBExtentionDemo
 //
-//  Created by 杨小兵 on 15/8/5.
-//  Copyright (c) 2015年 杨小兵. All rights reserved.
+//  Created by baidu on 17/2/9.
+//  Copyright © 2017年 com.xiaoxiaobing. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -14,6 +14,19 @@
 @end
 
 @implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+}
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
 /**
  *  简单的字典 -> 模型
  */
@@ -33,7 +46,8 @@ void keyValues2object()
                            };
     
     // 2.将字典转为User模型
-    XXBUser *user = [XXBUser objectWithKeyValues:dict];
+    XXBUser *user;
+    //    = [XXBUser objectWithKeyValues:dict];
     
     // 3.打印User模型的属性
     NSLog(@"name=%@, icon=%@, age=%zd, height=%@, money=%@, sex=%d, gay=%d", user.name, user.icon, user.age, user.height, user.money, user.sex, user.gay);
