@@ -18,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSMutableArray *array = [NSMutableArray array];
+    for (int  i = 0 ; i< 10 ; i++) {
+        [array addObject:@(i)];
+    }
+    NSRange rang=NSMakeRange(0, 5);
+    NSArray *newArray=[array subarrayWithRange:rang];
+    [array removeObjectsInRange:rang];
 }
 
 
