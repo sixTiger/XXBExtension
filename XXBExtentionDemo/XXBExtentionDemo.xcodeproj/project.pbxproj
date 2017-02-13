@@ -21,6 +21,7 @@
 		E190397D1E4C4957004AB154 /* XXBPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = E190397C1E4C4957004AB154 /* XXBPropertyType.m */; };
 		E19039801E4C4975004AB154 /* XXBPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = E190397F1E4C4975004AB154 /* XXBPropertyKey.m */; };
 		E19039831E4C5FB8004AB154 /* NSObject+XXBClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E19039821E4C5FB8004AB154 /* NSObject+XXBClass.m */; };
+		E19039861E519008004AB154 /* NSObject+XXBCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = E19039851E519008004AB154 /* NSObject+XXBCoding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,8 @@
 		E190397F1E4C4975004AB154 /* XXBPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBPropertyKey.m; sourceTree = "<group>"; };
 		E19039811E4C5FB8004AB154 /* NSObject+XXBClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XXBClass.h"; sourceTree = "<group>"; };
 		E19039821E4C5FB8004AB154 /* NSObject+XXBClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XXBClass.m"; sourceTree = "<group>"; };
+		E19039841E519008004AB154 /* NSObject+XXBCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XXBCoding.h"; sourceTree = "<group>"; };
+		E19039851E519008004AB154 /* NSObject+XXBCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XXBCoding.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				E190397F1E4C4975004AB154 /* XXBPropertyKey.m */,
 				E19039811E4C5FB8004AB154 /* NSObject+XXBClass.h */,
 				E19039821E4C5FB8004AB154 /* NSObject+XXBClass.m */,
+				E19039841E519008004AB154 /* NSObject+XXBCoding.h */,
+				E19039851E519008004AB154 /* NSObject+XXBCoding.m */,
 			);
 			name = XXBExtension;
 			path = ../../XXBExtension;
@@ -217,6 +222,7 @@
 				E19039801E4C4975004AB154 /* XXBPropertyKey.m in Sources */,
 				E19039771E4C48FA004AB154 /* NSObject+XXBKeyValue.m in Sources */,
 				E19039711E4C3D94004AB154 /* XXBExtensionConst.m in Sources */,
+				E19039861E519008004AB154 /* NSObject+XXBCoding.m in Sources */,
 				E190396E1E4C3C37004AB154 /* XXBFoundation.m in Sources */,
 				E190397A1E4C492F004AB154 /* XXBProperty.m in Sources */,
 				E19039831E4C5FB8004AB154 /* NSObject+XXBClass.m in Sources */,
@@ -374,6 +380,7 @@
 				E19039661E4C3B90004AB154 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

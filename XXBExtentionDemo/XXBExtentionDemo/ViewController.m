@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "XXBExtension.h"
+#import "NSObject+XXBKeyValue.h"
 #import "XXBUser.h"
 
 @interface ViewController ()
@@ -14,7 +16,6 @@
 @end
 
 @implementation ViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -54,7 +55,7 @@ void keyValues2object()
     
     // 2.将字典转为User模型
     XXBUser *user;
-    //    = [XXBUser objectWithKeyValues:dict];
+//    = [XXBUser objectWithKeyValues:dict];
     
     // 3.打印User模型的属性
     NSLog(@"name=%@, icon=%@, age=%zd, height=%@, money=%@, sex=%d, gay=%d", user.name, user.icon, user.age, user.height, user.money, user.sex, user.gay);
