@@ -13,7 +13,7 @@
 
 
 // 过期
-#define XXBExtensionDeprecated(dep) NS_DEPRECATED(2_0, 2_0, 2_0, 2_0, dep)
+#define XXBExtensionDeprecated(message) NS_DEPRECATED(2_0, 2_0, 2_0, 2_0, message)
 
 // 构建错误
 #define XXBExtensionBuildError(clazz, msg) \
