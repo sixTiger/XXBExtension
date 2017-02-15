@@ -56,6 +56,20 @@ XXBExtensionAssert2((param) != nil, returnValue)
  */
 #define XXBExtensionAssertParamNotNil(param) XXBExtensionAssertParamNotNil2(param, )
 
+#define XXBExtensionAssertError(condition, returnValue, clazz, msg) \
+[clazz setXXB_error:nil]; \
+if ((condition) == NO) { \
+XXBExtensionBuildError(clazz, msg); \
+return returnValue;\
+}
+
+
+// 日志输出
+#ifdef DEBUG
+#define XXBExtensionLog(...) NSLog(__VA_ARGS__)
+#else
+#define XXBExtensionLog(...)
+#endif
 /**
  *  类型（属性类型）
  */

@@ -22,6 +22,8 @@
 		E19039801E4C4975004AB154 /* XXBPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = E190397F1E4C4975004AB154 /* XXBPropertyKey.m */; };
 		E19039831E4C5FB8004AB154 /* NSObject+XXBClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E19039821E4C5FB8004AB154 /* NSObject+XXBClass.m */; };
 		E19039861E519008004AB154 /* NSObject+XXBCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = E19039851E519008004AB154 /* NSObject+XXBCoding.m */; };
+		E1B0203A1E54011900629139 /* NSObject+XXBProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B020391E54011900629139 /* NSObject+XXBProperty.m */; };
+		E1B0203D1E5436D500629139 /* NSString+XXBExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B0203C1E5436D500629139 /* NSString+XXBExtention.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,10 @@
 		E19039821E4C5FB8004AB154 /* NSObject+XXBClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XXBClass.m"; sourceTree = "<group>"; };
 		E19039841E519008004AB154 /* NSObject+XXBCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XXBCoding.h"; sourceTree = "<group>"; };
 		E19039851E519008004AB154 /* NSObject+XXBCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XXBCoding.m"; sourceTree = "<group>"; };
+		E1B020381E54011900629139 /* NSObject+XXBProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XXBProperty.h"; sourceTree = "<group>"; };
+		E1B020391E54011900629139 /* NSObject+XXBProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XXBProperty.m"; sourceTree = "<group>"; };
+		E1B0203B1E5436D500629139 /* NSString+XXBExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XXBExtention.h"; sourceTree = "<group>"; };
+		E1B0203C1E5436D500629139 /* NSString+XXBExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XXBExtention.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,10 @@
 				E19039821E4C5FB8004AB154 /* NSObject+XXBClass.m */,
 				E19039841E519008004AB154 /* NSObject+XXBCoding.h */,
 				E19039851E519008004AB154 /* NSObject+XXBCoding.m */,
+				E1B020381E54011900629139 /* NSObject+XXBProperty.h */,
+				E1B020391E54011900629139 /* NSObject+XXBProperty.m */,
+				E1B0203B1E5436D500629139 /* NSString+XXBExtention.h */,
+				E1B0203C1E5436D500629139 /* NSString+XXBExtention.m */,
 			);
 			name = XXBExtension;
 			path = ../../XXBExtension;
@@ -214,8 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B0203A1E54011900629139 /* NSObject+XXBProperty.m in Sources */,
 				E19039581E4C3B90004AB154 /* ViewController.m in Sources */,
 				E190396A1E4C3BCA004AB154 /* XXBUser.m in Sources */,
+				E1B0203D1E5436D500629139 /* NSString+XXBExtention.m in Sources */,
 				E190397D1E4C4957004AB154 /* XXBPropertyType.m in Sources */,
 				E19039551E4C3B90004AB154 /* AppDelegate.m in Sources */,
 				E19039521E4C3B90004AB154 /* main.m in Sources */,

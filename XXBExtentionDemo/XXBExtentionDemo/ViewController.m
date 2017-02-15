@@ -11,7 +11,7 @@
 #import "NSObject+XXBKeyValue.h"
 #import "XXBUser.h"
 
-@interface ViewController ()
+@interface ViewController ()<XXBUserDelegate>
 
 @end
 
@@ -26,12 +26,16 @@
     NSRange rang=NSMakeRange(0, 5);
     NSArray *newArray=[array subarrayWithRange:rang];
     [array removeObjectsInRange:rang];
+    
+    XXBUser *user = [[XXBUser alloc] init];
+    user.deleagte = self;
+    
+    keyValues2object();
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)callName:(XXBUser *)user andName:(NSString *)name {
+    NSLog(@"%@",name);
 }
 
 
@@ -54,8 +58,7 @@ void keyValues2object()
                            };
     
     // 2.将字典转为User模型
-    XXBUser *user;
-//    = [XXBUser objectWithKeyValues:dict];
+    XXBUser *user = [XXBUser XXB_objectWithKeyValues:dict];
     
     // 3.打印User模型的属性
     NSLog(@"name=%@, icon=%@, age=%zd, height=%@, money=%@, sex=%d, gay=%d", user.name, user.icon, user.age, user.height, user.money, user.sex, user.gay);

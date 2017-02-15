@@ -8,6 +8,25 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ 归档的实现
+ */
+#define XXBCodingImplementation \
+- (id)initWithCoder:(NSCoder *)decoder \
+{ \
+if (self = [super init]) { \
+[self XXB_decode:decoder]; \
+} \
+return self; \
+} \
+\
+- (void)encodeWithCoder:(NSCoder *)encoder \
+{ \
+[self XXB_encode:encoder]; \
+}
+
+#define XXBExtensionCodingImplementation XXBCodingImplementation
+
 @protocol XXBCoding <NSObject>
 @optional
 /**
@@ -20,6 +39,13 @@
 + (NSArray *)XXB_ignoredCodingPropertyNames;
 
 @end
-@interface NSObject(XXBCoding)
-
+@interface NSObject(XXBCoding)<XXBCoding>
+/**
+ *  解码（从文件中解析对象）
+ */
+- (void)XXB_decode:(NSCoder *)decoder;
+/**
+ *  编码（将对象写入文件中）
+ */
+- (void)XXB_encode:(NSCoder *)encoder;
 @end
